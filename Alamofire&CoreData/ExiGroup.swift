@@ -30,7 +30,7 @@ class ExiGroup : Mappable{
     }
     
     func toString() -> String {
-        return "ExiGroup: id  = \(id!), name = \(name!), devices = \(getDeviceString())"
+        return "ExiGroup: id  = \(id!), name = \(name!), iconUrl = \(iconUrl), type = \(type!), devices = \(getDeviceString())"
     }
     
     func getDeviceString() -> String {

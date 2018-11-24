@@ -18,12 +18,12 @@ class UserData : Mappable{
     }
     
     func mapping(map: Map) {
-        user <- map["user"]
         groups <- map["groups"]
+        user <- map["user"]
     }
     
     func toString() -> String {
-        return "UserData: user  = \(user!.toString), groups = \(getGroupString())"
+        return "UserData: user  = \(user!.toString()), groups = \(getGroupString())"
     }
     
     func getGroupString() -> String {

@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DeviceMO+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:DeviceMO+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:GroupMO+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:GroupMO+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:UserMO+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:UserMO+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:Alamofire&amp;CoreData.xcodeproj">
    </FileRef>
    <FileRef

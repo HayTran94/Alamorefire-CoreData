@@ -9,14 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class ExiDevice: Mappable{
+class ExiDevice: Mappable {
     var id: Int?
     var macAddress: String?
     var modelCode: String?
     var name: String?
     var iconUrl: String?
     var userId: Int?
-    var sharedUsers: [ExiUser]?
+    var sharedUsers: [ExiSharedUser]?
+
     
     required init?(map: Map) {
         
@@ -25,15 +26,15 @@ class ExiDevice: Mappable{
     func mapping(map: Map) {
         id <- map["id"]
         macAddress <- map["mac_address"]
+        userId <- map["user_id"]
         modelCode <- map["model_code"]
         name <- map["name"]
-        userId <- map["user_id"]
         iconUrl <- map["icon_url"]
         sharedUsers <- map["sharedUsers"]
     }
     
     func toString() -> String {
-        return "ExiDevice: id  = \(id!), name = \(name!), macAddr = \(macAddress!), sharedUsers = \(getUserString())"
+        return "ExiDevice: id  = \(id!), name = \(name!), macAddr = \(macAddress!), userId = \(userId) sharedUsers = \(getUserString())"
     }
     
     func getUserString() -> String {

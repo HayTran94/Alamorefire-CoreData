@@ -9,25 +9,21 @@
 import Foundation
 import ObjectMapper
 
-class ExiUser: Mappable{
-    var id: Int?
-    var name: String?
-    var email: String?
-    var iconUrl: String?
+class ExiSharedUser: Mappable{
+    var user: ExiUser?
+    var permissionId : Int?
     
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
-        id <- map["id"]
-        email <- map["email"]
-        iconUrl <- map["icon_url"]
-        name <- map["name"]
+        user <- map["user"]
+        permissionId <- map["permission_id"]
     }
     
     func toString() -> String {
-        return "ExiUser: id  = \(id), name = \(name), email = \(email) iconUrl = \(iconUrl)"
+        return "ExiSharedUser: user  = \(user!.toString()), permissionId = \(permissionId!)"
     }
     
 }

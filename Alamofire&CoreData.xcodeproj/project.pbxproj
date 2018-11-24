@@ -14,6 +14,8 @@
 		B522ACFD21A9057E004F3451 /* ExiDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522ACFC21A9057E004F3451 /* ExiDevice.swift */; };
 		B522ACFF21A90585004F3451 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522ACFE21A90585004F3451 /* UserData.swift */; };
 		B522AD0421A913B1004F3451 /* CoreDataSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522AD0321A913B1004F3451 /* CoreDataSample.swift */; };
+		B522AD2021A94DB6004F3451 /* exi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B522AD1E21A94DB6004F3451 /* exi.xcdatamodeld */; };
+		B522AD3A21A95E8E004F3451 /* ExiSharedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522AD3921A95E8E004F3451 /* ExiSharedUser.swift */; };
 		B5CDDE1621A8F969009A4B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CDDE1521A8F969009A4B84 /* AppDelegate.swift */; };
 		B5CDDE1821A8F969009A4B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CDDE1721A8F969009A4B84 /* ViewController.swift */; };
 		B5CDDE1B21A8F969009A4B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CDDE1921A8F969009A4B84 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		B522ACFC21A9057E004F3451 /* ExiDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExiDevice.swift; sourceTree = "<group>"; };
 		B522ACFE21A90585004F3451 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		B522AD0321A913B1004F3451 /* CoreDataSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSample.swift; sourceTree = "<group>"; };
+		B522AD1F21A94DB6004F3451 /* exi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = exi.xcdatamodel; sourceTree = "<group>"; };
+		B522AD3921A95E8E004F3451 /* ExiSharedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExiSharedUser.swift; sourceTree = "<group>"; };
 		B5CDDE1221A8F969009A4B84 /* Alamofire&CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alamofire&CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CDDE1521A8F969009A4B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5CDDE1721A8F969009A4B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		B5CDDE0921A8F969009A4B84 = {
 			isa = PBXGroup;
 			children = (
+				B522AD1E21A94DB6004F3451 /* exi.xcdatamodeld */,
 				B5CDDE1421A8F969009A4B84 /* Alamofire&CoreData */,
 				B5CDDE2921A8F96C009A4B84 /* Alamofire&CoreDataUITests */,
 				B5CDDE1321A8F969009A4B84 /* Products */,
@@ -140,6 +145,7 @@
 				B5CDDE3521A8FFC9009A4B84 /* APIClient.swift */,
 				B522AD0321A913B1004F3451 /* CoreDataSample.swift */,
 				B522ACF821A90551004F3451 /* ExiUser.swift */,
+				B522AD3921A95E8E004F3451 /* ExiSharedUser.swift */,
 				B522ACFE21A90585004F3451 /* UserData.swift */,
 				B522ACFC21A9057E004F3451 /* ExiDevice.swift */,
 				B522ACFA21A90559004F3451 /* ExiGroup.swift */,
@@ -338,11 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B522AD3A21A95E8E004F3451 /* ExiSharedUser.swift in Sources */,
 				B522ACFF21A90585004F3451 /* UserData.swift in Sources */,
 				B522ACFB21A90559004F3451 /* ExiGroup.swift in Sources */,
 				B522ACF921A90551004F3451 /* ExiUser.swift in Sources */,
 				B5CDDE1821A8F969009A4B84 /* ViewController.swift in Sources */,
 				B522AD0421A913B1004F3451 /* CoreDataSample.swift in Sources */,
+				B522AD2021A94DB6004F3451 /* exi.xcdatamodeld in Sources */,
 				B522ACFD21A9057E004F3451 /* ExiDevice.swift in Sources */,
 				B5CDDE1621A8F969009A4B84 /* AppDelegate.swift in Sources */,
 				B5CDDE3621A8FFC9009A4B84 /* APIClient.swift in Sources */,
@@ -614,6 +622,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B522AD1E21A94DB6004F3451 /* exi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B522AD1F21A94DB6004F3451 /* exi.xcdatamodel */,
+			);
+			currentVersion = B522AD1F21A94DB6004F3451 /* exi.xcdatamodel */;
+			path = exi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5CDDE0A21A8F969009A4B84 /* Project object */;
 }
