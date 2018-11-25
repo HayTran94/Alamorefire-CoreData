@@ -12,4 +12,8 @@ import CoreData
 @objc(DeviceMO)
 public class DeviceMO: NSManagedObject {
 
+    
+    func toString() -> String {
+        return "DeviceMO: id  = \(id), name = \(name!), iconUrl = \(iconUrl), devices = \(getDeviceString())"
+    }
 }
